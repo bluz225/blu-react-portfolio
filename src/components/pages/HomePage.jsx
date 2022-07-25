@@ -16,7 +16,7 @@ export default function HomePage() {
         <>
             {/* Home Page Container */}
             <section
-                className={`flex flex-row justify-center items-center mt-[3rem] h-[100%]`}
+                className={`flex flex-row justify-center items-center mt-[10rem]`}
             >
                 {/* Profile Image Container */}
                 <div
@@ -52,7 +52,7 @@ export default function HomePage() {
                     className='flex flex-col h-[10rem] w-[30rem]'
                 >
                     <h2>Who Am I?</h2>
-                    <h3>Hi I'm Billy, I like making useful applications and interesting challenges</h3>
+                    <h3>Hi I'm Billy, I am an engineer from Southern California who likes making useful applications and interesting challenges</h3>
                 </div>
             </section>
         </>

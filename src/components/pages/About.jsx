@@ -1,11 +1,11 @@
-import {React} from 'react'
+import { React } from 'react'
 
 export default function About() {
-    const divStyles = "my-10"
+    const divStyles = "my-5"
 
     return (
         <section
-            className={`flex flex-row items-center justify-center mx-[30rem]`}
+            className={`flex flex-row items-center justify-center mx-[30rem] mt-[4rem]`}
         >
             <div
                 className={`flex flex-col items-center justify-center`}
@@ -14,21 +14,30 @@ export default function About() {
                     className={`${divStyles}`}
                 >
                     <h1>Education:</h1>
-                    <p>Incididunt nostrud esse non dolore fugiat pariatur sit occaecat aute eu duis fugiat. Qui et occaecat reprehenderit reprehenderit tempor id cillum duis sunt et. Veniam consectetur eu reprehenderit tempor qui eu pariatur aute eu in minim qui ex. Elit voluptate velit culpa sint ipsum.
+                    <p
+                        className='pl-4'
+                    >
+                        I graduated from California Polytechnical State University, San Luis Obispo in 2012 with a BS in Biomedical Engineering. During my career in Medical Device, I obtained the Certified Quality Engineer (CQE) certification from ASQ. Most recently, I have completed a 12 week Immersive Software Engineering from General Assembly where we built multiple applications from front end to full stack.
                     </p>
                 </div>
                 <div
                     className={`${divStyles}`}
                 >
                     <h1>Career:</h1>
-                    <p>Incididunt nostrud esse non dolore fugiat pariatur sit occaecat aute eu duis fugiat. Qui et occaecat reprehenderit reprehenderit tempor id cillum duis sunt et. Veniam consectetur eu reprehenderit tempor qui eu pariatur aute eu in minim qui ex. Elit voluptate velit culpa sint ipsum.
+                    <p
+                        className='pl-4'
+                    >
+                        I was lucky enough to follow a career that allowed me to use my skills and knowledge to help people in the form of medical device quality engineering. I spent 10 years learning various engineering skills ranging from project management to proposing and leading initiatives to validations of process and test methods.
                     </p>
                 </div>
                 <div
                     className={`${divStyles}`}
                 >
                     <h1>Why are you still reading this:</h1>
-                    <p>Incididunt nostrud esse non dolore fugiat pariatur sit occaecat aute eu duis fugiat. Qui et occaecat reprehenderit reprehenderit tempor id cillum duis sunt et. Veniam consectetur eu reprehenderit tempor qui eu pariatur aute eu in minim qui ex. Elit voluptate velit culpa sint ipsum.
+                    <p
+                        className='pl-4'
+                    >
+                        In my spare time, I enjoy EDM and music festivals. I almost exclusively drink IPAs when going out. I am into anime but refuse to watch One Piece until the final Arc. My recently favorite steam game is satisfactory for its complexity and creativity. 
                     </p>
                 </div>
             </div>
