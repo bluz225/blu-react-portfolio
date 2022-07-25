@@ -1,39 +1,58 @@
 import React from 'react'
 
-export default function HomePage({ PageVH }) {
-    const NameString = "<Billy Lu/>"
+export default function HomePage() {
+    const nameString = "<Billy Lu/>"
+    const interestsArr = ["Anime", "Gamer", "Music-Festivals", "IPA-Appreciation"]
+    
+    const interestsMap = interestsArr.map((interest)=>{
+        return (
+            <>
+                <li>{interest}</li>
+            </>
+        )
+    })
+    
     return (
         <>
+            {/* Home Page Container */}
             <section
-                className={`flex flex-row justify-center items-center h-[${PageVH}vh] w-[100vw] mt-[15rem]`}
+                className={`flex flex-row justify-center items-center mt-[3rem] h-[100%]`}
             >
+                {/* Profile Image Container */}
                 <div
                     className='mx-10'
                 >
                     <img
-                        className='border rounded-full'
+                        className='border rounded-full object-cover'
                         src="https://media-exp1.licdn.com/dms/image/C5103AQEqdxgwJIiwEA/profile-displayphoto-shrink_800_800/0/1516606953138?e=1663804800&v=beta&t=YTMeyVajpdDdaY1dgDGLMB_kLCA1-MXPl4VLeV1g2aE"
                         alt="Billy Lu"
                     />
                 </div>
+
+                {/* Name Div Container */}
                 <div
-                    className='flex items-center'
+                    className='flex flex-col justify-center'
                 >
-                    <h1
-                        className="text-blue-500 text-[100px]"
+                    <p
+                        className="text-blue-500 text-[3rem]"
                     >
-                        {NameString}
-                    </h1>
+                        {nameString}
+                    </p>
+                    <ul>
+                        {interestsMap}
+                    </ul>
                 </div>
             </section>
+
+            {/* Quick Self Intro Section */}
             <section
                 className='flex justify-center mt-10'
             >
                 <div
                     className='flex flex-col h-[10rem] w-[30rem]'
                 >
-                    <h2>Blurp:</h2>
-                    <h3>Nulla eiusmod sint sint culpa duis consectetur nulla enim incididunt veniam eu. Cillum in minim fugiat est ad pariatur. Consequat qui sint tempor est velit enim duis.</h3>
+                    <h2>Who Am I?</h2>
+                    <h3>Hi I'm Billy, I like making useful applications and interesting challenges</h3>
                 </div>
             </section>
         </>

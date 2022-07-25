@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
-export default function Navbar({ NavBarVH }) {
+export default function Navbar() {
     const linkStyles = "mx-10"
     return (
         <div
-            className={`flex justify-end items-center h-[${NavBarVH}vh] w-[100vw]`}
+            className={`flex justify-end items-center mx-[10px] fixed inset-x-0 top-[2vh]`}
         >
             <Link
                 className={linkStyles}
@@ -16,6 +16,8 @@ export default function Navbar({ NavBarVH }) {
             <Link
                 className={linkStyles}
                 to="/projects">Projects</Link>
+
+
         </div>
     )
 }
