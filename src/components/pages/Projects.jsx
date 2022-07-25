@@ -1,23 +1,27 @@
 import React from 'react'
 
 export default function Projects() {
-  const divStyles = "flex items-center justify-center my-5 h-auto w-[40rem]"
+  const divStyles = "flex items-center justify-center my-5 mx-5 h-auto justify-self-start"
   const projectDetailStyles = "flex flex-col"
-  const imageStyles = "h-[10rem] w-[10rem] object-fill border rounded-xl"
+  const imageStyles = "w-[300px] h-auto object-fill border rounded-xl"
 
 
   return (
     <section
-      className={`flex flex-row justify-center items-center`}
+      className={`flex flex-row justify-center items-center h-[90vh]`}
     >
       <div
         className='flex flex-col'
       >
-        <h1>Projects</h1>
+        <h1 
+        className='text-center text-[100px]'
+        >Projects</h1>
 
         {/* Projects Container Div */}
-        <div>
-          
+        <div
+          className='grid grid-cols-2'
+        >
+
           {/* project 1: Gun Shapes Project */}
           <div
             className={`${divStyles}`}
@@ -102,6 +106,7 @@ export default function Projects() {
               <a href='https://62d72ddfb37fce2eea6ee563--ensemble-closet.netlify.app/'>Delpoyed</a>
             </div>
           </div>
+
         </div>
 
       </div>

@@ -16,7 +16,10 @@ export default function HomePage() {
         <>
             {/* Home Page Container */}
             <section
-                className={`flex flex-row justify-center items-center mt-[10rem]`}
+            className='flex flex-col items-center justify-center h-[90vh]'
+            >
+            <div
+                className={`flex flex-row justify-center items-center`}
             >
                 {/* Profile Image Container */}
                 <div
@@ -42,10 +45,10 @@ export default function HomePage() {
                         {interestsMap}
                     </ul>
                 </div>
-            </section>
+            </div>
 
             {/* Quick Self Intro Section */}
-            <section
+            <div
                 className='flex justify-center mt-10'
             >
                 <div
@@ -54,6 +57,7 @@ export default function HomePage() {
                     <h2>Who Am I?</h2>
                     <h3>Hi I'm Billy, I am an engineer from Southern California who likes making useful applications and interesting challenges</h3>
                 </div>
+            </div>
             </section>
         </>
     )

@@ -1,15 +1,18 @@
 import { React } from 'react'
 
 export default function About() {
-    const divStyles = "my-5"
+    const divStyles = "my-5 max-h-[300px]"
 
     return (
         <section
-            className={`flex flex-row items-center justify-center mx-[30rem] mt-[4rem]`}
+            className={`flex flex-col items-center justify-center h-[90vh]`}
         >
+            <h1
+            className='text-center text-[100px]'
+            >About Me</h1>
             <div
-                className={`flex flex-col items-center justify-center`}
-            >
+                className={`flex flex-col items-center justify-center px-[30vw]`}
+            >   
                 <div
                     className={`${divStyles}`}
                 >

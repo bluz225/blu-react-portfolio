@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Footer() {
+export default function Footer({bgColor}) {
     const linkStyles = "mx-10"
     return (
         <>
             <footer
-                className='flex justify-center items-center fixed inset-x-0 bottom-[2vh]'
+                className={`flex justify-center items-center fixed inset-x-0 bottom-0 bg-[#${bgColor}] h-[5vh]`}
             >
                 <a
                     className={`${linkStyles} flex items-center`}
