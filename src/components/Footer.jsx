@@ -1,4 +1,5 @@
 import React from 'react'
+import myResumePDF from "../files/BillyLu-Resume-SoftwareEngineer.pdf"
 
 export default function Footer({bgColor}) {
     const linkStyles = "mx-10"
@@ -26,6 +27,14 @@ export default function Footer({bgColor}) {
                         alt='Linkedin logo'
                     />
                     <p>Linkedin</p>
+                </a>
+
+                <a 
+                    className={`${linkStyles} flex items-center`}
+                    href={myResumePDF}
+                    download="Billy_Lu_Resume.pdf"
+                >
+                    <p>Resume</p>
                 </a>
             </footer>
         </>
