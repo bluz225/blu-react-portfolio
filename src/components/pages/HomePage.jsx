@@ -1,12 +1,12 @@
 import React from 'react'
 
 export default function HomePage() {
-    const nameString = "<Billy Lu/>"
+    const nameString = "<>BillyLu</>"
     const interestsArr = ["Anime", "Gamer", "Music-Festivals", "IPA-Appreciation"]
     const interestsMap = interestsArr.map((interest) => {
         return (
             <>
-                <li>{interest}</li>
+                <li>{`<${interest}/>`}</li>
             </>
         )
     })
@@ -25,8 +25,8 @@ export default function HomePage() {
                         className='mx-10'
                     >
                         <img
-                            className='border rounded-full object-cover'
-                            src="https://media-exp1.licdn.com/dms/image/C5103AQEqdxgwJIiwEA/profile-displayphoto-shrink_800_800/0/1516606953138?e=1663804800&v=beta&t=YTMeyVajpdDdaY1dgDGLMB_kLCA1-MXPl4VLeV1g2aE"
+                            className='border rounded-full object-cover h-[300px] w-[300px]'
+                            src="https://i.imgur.com/MaI3re8.jpg"
                             alt="Billy Lu"
                         />
                     </div>
