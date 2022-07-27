@@ -1,5 +1,5 @@
 import React from 'react'
-import myResumePDF from "../files/BillyLu-Resume-SoftwareEngineer.pdf"
+import myResumePDF from "../files/BillyLu-Resume-SoftwareEngineer2.pdf"
 
 export default function Footer({bgColor}) {
     const linkStyles = "mx-10"
