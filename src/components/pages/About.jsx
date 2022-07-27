@@ -36,7 +36,7 @@ export default function About() {
                 <div
                     className={`${divStyles}`}
                 >
-                    <h1>Why are you still reading this:</h1>
+                    <h1>Why are you still reading this?!</h1>
                     <p
                         className='pl-4'
                     >
