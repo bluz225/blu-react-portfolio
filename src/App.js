@@ -8,33 +8,36 @@ import {
   Routes,
   Route,
 } from 'react-router-dom'
+import "./App.css"
 
 function App() {
-  const bgColor = "ebebeb"
-  const footnavBgColor = "003459"
+  const bgColor = "#e5e5e5"
+  const footnavBgColor = "#eaf4f4"
   return (
     <Router>
-        <Navbar
-        bgColor = {footnavBgColor}
-        />
-      <div
-      className={`bg-[#${bgColor}]`}
-      >
-        <Routes>
-          <Route
-            path="/"
-            element={<HomePage/>} />
-          <Route
-            path="/about"
-            element={<About/>} />
-          <Route
-            path="/projects"
-            element={<Projects/>} />
-        </Routes>
-      </div>
-      <Footer
-      bgColor = {footnavBgColor}
+
+      <Navbar
+        bgColor={footnavBgColor}
       />
+
+      <Routes>
+        <Route
+          path="/"
+          element={<HomePage
+            bgColor={bgColor}
+          />} />
+        <Route
+          path="/about"
+          element={<About />} />
+        <Route
+          path="/projects"
+          element={<Projects />} />
+      </Routes>
+
+      <Footer
+        bgColor={footnavBgColor}
+      />
+
     </Router>
   );
 }

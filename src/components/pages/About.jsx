@@ -33,7 +33,7 @@ export default function About() {
                         I was lucky enough to follow a career that allowed me to use my skills and knowledge to help people in the form of medical device quality engineering. I spent 10 years learning various engineering skills ranging from project management to proposing and leading initiatives to validations of process and test methods.
                     </p>
                 </div>
-                <div
+                {/* <div
                     className={`${divStyles}`}
                 >
                     <h1>Why are you still reading this?!</h1>
@@ -42,7 +42,7 @@ export default function About() {
                     >
                         In my spare time, I enjoy EDM and music festivals. I almost exclusively drink IPAs when going out. I am into anime but refuse to watch One Piece until the final Arc. My recently favorite steam game is satisfactory for its complexity and creativity. 
                     </p>
-                </div>
+                </div> */}
             </div>
         </section>
     )

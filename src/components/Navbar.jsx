@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from "react-router-dom"
 
 export default function Navbar({bgColor}) {
-    const linkStyles = "mx-10"
+    const linkStyles = "mx-10 text-white"
     return (
         <div
-            className={`flex justify-end items-center px-[10px] h-[5vh] bg-[#${{bgColor}}]`}
+            className={`bg-[#${bgColor}] flex justify-end items-center px-[10px] h-[5vh] bg-[#${{bgColor}}]`}
         >
             <Link
                 className={linkStyles}

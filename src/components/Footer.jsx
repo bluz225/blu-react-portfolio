@@ -1,12 +1,13 @@
 import React from 'react'
 import myResumePDF from "../files/BillyLu-Resume-SoftwareEngineer2.pdf"
+import {AiFillFilePdf} from "react-icons/ai"
 
 export default function Footer({bgColor}) {
     const linkStyles = "mx-10"
     return (
-        <>
+        <> 
             <footer
-                className={`flex justify-center items-center fixed inset-x-0 bottom-0 bg-[#${bgColor}] h-[5vh]`}
+                className={`flex justify-center items-center fixed inset-x-1 bottom-1 bg-[${bgColor}] h-[5vh]`}
             >
                 <a
                     className={`${linkStyles} flex items-center`}
@@ -34,6 +35,9 @@ export default function Footer({bgColor}) {
                     href={myResumePDF}
                     download="Billy_Lu_Resume.pdf"
                 >
+                    <AiFillFilePdf
+                    size="40"
+                    />
                     <p>Resume</p>
                 </a>
             </footer>
