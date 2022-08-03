@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import About from "./components/pages/About";
 import Projects from "./components/pages/Projects";
 import Footer from "./components/Footer";
+import {useState} from "react"
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,32 +12,38 @@ import {
 import "./App.css"
 
 function App() {
-  const bgColor = "#e5e5e5"
-  const footnavBgColor = "#eaf4f4"
+  const [currentNav, setCurrentNav ] = useState("")
+  const footnavBgColor = "#023047"
   return (
     <Router>
 
       <Navbar
         bgColor={footnavBgColor}
+        currentNav={currentNav}
       />
-
+      <main
+      className="bg-gradient-to-t from-white via-gray-100 via-gray-200 via-gray-300 to-gray-400"
+      >
       <Routes>
         <Route
           path="/"
           element={<HomePage
-            bgColor={bgColor}
+            setCurrentNav={setCurrentNav}
           />} />
         <Route
           path="/about"
-          element={<About />} />
+          element={<About 
+            setCurrentNav={setCurrentNav}
+          />} />
         <Route
           path="/projects"
-          element={<Projects />} />
+          element={<Projects 
+            setCurrentNav={setCurrentNav}
+          />} />
       </Routes>
+      </main>
 
-      <Footer
-        bgColor={footnavBgColor}
-      />
+      <Footer/>
 
     </Router>
   );

@@ -1,16 +1,21 @@
-import React from 'react'
+import { React, useEffect } from 'react'
+import { useId } from 'react'
 
-export default function HomePage({bgColor}) {
-    
-    console.log(bgColor)
+export default function HomePage({setCurrentNav}) {
     const nameString = "<>BillyLu</>"
     const interestsArr = ["Anime", "Games", "Music-Festivals", "IPAs"]
-    const interestsMap = interestsArr.map((interest,idx) => {
+    let interestId = useId()
+
+    useEffect(()=>{
+        setCurrentNav("home")
+      })
+
+    const interestsMap = interestsArr.map((interest, idx) => {
         return (
             <>
                 <li
-                key={`interests${idx}`}
-                className="text-[1rem]"
+                    key={`${interestId}-${idx}`}
+                    className="text-[1rem]"
                 >{`<${interest}/>`}</li>
             </>
         )
@@ -19,13 +24,10 @@ export default function HomePage({bgColor}) {
     return (
         <>
             <div
-            >
-            {/* Home Page Container */}
-            <section
-                className={`flex flex-col items-center justify-center`}
+                className={`flex flex-col mb-auto pt-[30px] h-[90vh]`}
             >
                 <div
-                    className={`flex flex-row justify-center items-center`}
+                    className={`flex flex-row justify-center items-center my-5`}
                 >
                     {/* Profile Image Container */}
                     <div
@@ -40,10 +42,10 @@ export default function HomePage({bgColor}) {
 
                     {/* Name Div Container */}
                     <div
-                        className='flex flex-col justify-center'
+                        className='flex flex-col justify-center mb-auto'
                     >
                         <p
-                            className="text-blue-500 text-[1rem]"
+                            className="text-blue-700 text-[1rem]"
                         >
                             {nameString}
                         </p>
@@ -55,17 +57,19 @@ export default function HomePage({bgColor}) {
 
                 {/* Quick Self Intro Section */}
                 <div
-                    className='flex justify-center'
+                    className='flex justify-center my-5'
                 >
                     <div
                         className='flex flex-col h-[3rem] w-[15rem]'
                     >
-                        <h2>Who Am I?</h2>
+                        <h2
+                        className='my-5'
+                        >Who Am I?</h2>
                         <h3>Hi I'm Billy, I am an engineer from Southern California who likes making useful applications and interesting challenges</h3>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+
         </>
     )
 }

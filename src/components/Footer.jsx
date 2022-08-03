@@ -1,44 +1,59 @@
 import React from 'react'
 import myResumePDF from "../files/BillyLu-Resume-SoftwareEngineer2.pdf"
-import {AiFillFilePdf} from "react-icons/ai"
+import { AiFillFilePdf } from "react-icons/ai"
 
-export default function Footer({bgColor}) {
-    const linkStyles = "mx-10"
+export default function Footer() {
+    const linkStyles = "flex items-center justify-center mx-10"
+    const ptagStylesSM = "text-sm w-[30px]"
+    const ptageStylesMD = "md:text-lg md:w-[50px]"
+    const imgStylesSM = "w-[20px] mx-2"
+    const imgStylesMD = "md:w-[50px]"
+    const svgStylesSM = "h-[25px] w-[30px]"
+    const svgStylesMD = "md:h-[50px] md:w-[50px]"
     return (
-        <> 
+        <>
             <footer
-                className={`flex justify-center items-center fixed inset-x-1 bottom-1 bg-[${bgColor}] h-[5vh]`}
+                className={`flex justify-center items-center fixed inset-x-1 bottom-1 bg-white h-[5vh] pt-3 md:py-10`}
             >
                 <a
-                    className={`${linkStyles} flex items-center`}
+                    className={`${linkStyles}`}
                     href='https://github.com/bluz225'>
                     <img
-                        className='w-[32px] mx-2'
+                        className={`${imgStylesSM} ${imgStylesMD}`}
                         src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
                         alt='git hub logo'
                     />
-                    <p>GitHub Link</p>
+                    <p
+                        className={`${ptagStylesSM} ${ptageStylesMD}`}
+                    >GitHub</p>
                 </a>
                 <a
-                    className={`${linkStyles} flex items-center`}
+                    className={`${linkStyles}`}
                     href='https://www.linkedin.com/in/billy-lu-bbb61652/'>
                     <img
-                        className='w-[32px] mx-2'
+                        className={`${imgStylesSM} ${imgStylesMD}`}
                         src='https://cdn-icons-png.flaticon.com/512/174/174857.png'
                         alt='Linkedin logo'
                     />
-                    <p>Linkedin</p>
+                    <p
+                        className={`${ptagStylesSM} ${ptageStylesMD}`}
+                    >Linkedin</p>
                 </a>
 
-                <a 
-                    className={`${linkStyles} flex items-center`}
+                <a
+                    className={`
+                        ${linkStyles} 
+                    `}
                     href={myResumePDF}
                     download="Billy_Lu_Resume.pdf"
                 >
+
                     <AiFillFilePdf
-                    size="40"
+                        className={`${svgStylesSM} ${svgStylesMD}`}
                     />
-                    <p>Resume</p>
+                    <p
+                        className={`${ptagStylesSM} ${ptageStylesMD}`}
+                    >Resume</p>
                 </a>
             </footer>
         </>
