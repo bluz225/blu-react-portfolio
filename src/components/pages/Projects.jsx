@@ -14,7 +14,7 @@ export default function Projects({ setCurrentNav }) {
       <>
         <div
           key={`${projectId}${idx}`}
-          className='w-[350px] relative group py-0 group-hover:bg-red-900'
+          className='w-[350px] relative group my-5 md:m-5 group-hover:bg-red-900'
         >
 
           <div
@@ -23,38 +23,38 @@ export default function Projects({ setCurrentNav }) {
           </div>
           {/* project 1: Gun Shapes Project */}
 
-            <img
-              className={`object-fit`}
-              src={project.imgUrl}
-              alt={project.imgAlt}
-            />
+          <img
+            className={`object-cover place-self-center`}
+            src={project.imgUrl}
+            alt={project.imgAlt}
+          />
 
           <div
-            className={`opacity-0 group-hover:opacity-100 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}
+            className={`opacity-0 group-hover:opacity-100 bg-black/50 h-full w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`}
           >
-            <h1
-              className={`text-slate-100`}
-            >./{project.groupSize}/{project.name}</h1>
-            {/* <p>Gunbound-clone: Two players will spawn in their own turrets and take turns firing at each other. First one to hit the other wins. Be forewarned, this game is not as simple as it appears.</p> */}
-            <p
-              className={``}
+            <div
+            className='flex flex-col items-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 absolute'
             >
-              <a
-                className={`text-slate-100 hover:text-slate-100`}
-                href={project.gitHubUrl}>GitHub</a>
-            </p>
-            <p
-              className={``}
-            >
-              <a
-                className={`text-slate-100 hover:text-slate-100`}
-                href={project.deployedUrl}>Delpoyed</a>
-            </p>
+              <h1
+                className={`text-slate-100`}
+              >./{project.groupSize}/{project.name}</h1>
+              {/* <p>Gunbound-clone: Two players will spawn in their own turrets and take turns firing at each other. First one to hit the other wins. Be forewarned, this game is not as simple as it appears.</p> */}
+              <p
+                className={``}
+              >
+                <a
+                  className={`text-slate-100 hover:text-slate-100`}
+                  href={project.gitHubUrl}>GitHub</a>
+              </p>
+              <p
+                className={``}
+              >
+                <a
+                  className={`text-slate-100 hover:text-slate-100`}
+                  href={project.deployedUrl}>Delpoyed</a>
+              </p>
+            </div>
           </div>
-
-
-
-
         </div>
       </>
     )
@@ -63,16 +63,20 @@ export default function Projects({ setCurrentNav }) {
 
   return (
     <section
-      className={`pt-[50px] h-fit`}
+      className={`pt-[50px] h-[90vh] overflow-auto`}
     >
 
       <h1
         className='text-center'
       >Projects</h1>
       <div
-        className='flex flex-col items-center'
+        className='flex justify-center mt-10'
       >
-        {projectsMap}
+        <div
+          className='grid grid-cols-1 justify-items-center md:grid-cols-2'
+        >
+          {projectsMap}
+        </div>
       </div>
 
 
