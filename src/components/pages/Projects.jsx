@@ -70,10 +70,6 @@ export default function Projects({ setCurrentNav }) {
     <section
       className={`pt-[50px] h-[90vh] overflow-auto`}
     >
-
-      <h1
-        className='text-center'
-      >Projects</h1>
       <div
         className='flex justify-center mt-10'
       >

@@ -10,7 +10,7 @@ export default function About({setCurrentNav}) {
     return (
         <section
             className={`pt-[3rem] flex flex-col items-center justify-center h-[90vh] overflow-auto
-            md:mx-[20rem]
+            md:mx-[20rem] md:text-[2rem]
             `}
         >
             <h1

@@ -3,7 +3,7 @@ import { useId } from 'react'
 
 export default function HomePage({setCurrentNav}) {
     const nameString = "<>BillyLu</>"
-    const interestsArr = ["Anime", "Games", "Music-Festivals", "IPAs"]
+    const interestsArr = ["Anime-Binger", "Gamer", "Music-Lover", "Foodie"]
     let interestId = useId()
 
     useEffect(()=>{
@@ -15,7 +15,7 @@ export default function HomePage({setCurrentNav}) {
             <>
                 <li
                     key={`${interestId}-${idx}`}
-                    className="text-[1rem] md:text-[6rem]"
+                    className="text-[1rem] md:text-[3rem]"
                 >{`<${interest}/>`}</li>
             </>
         )
