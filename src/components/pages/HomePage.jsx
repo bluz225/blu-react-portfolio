@@ -15,7 +15,7 @@ export default function HomePage({setCurrentNav}) {
             <>
                 <li
                     key={`${interestId}-${idx}`}
-                    className="text-[1rem]"
+                    className="text-[1rem] md:text-[6rem]"
                 >{`<${interest}/>`}</li>
             </>
         )
@@ -24,7 +24,7 @@ export default function HomePage({setCurrentNav}) {
     return (
         <>
             <div
-                className={`flex flex-col mb-auto pt-[30px] h-[90vh]`}
+                className={`flex flex-col mb-auto pt-[30px] md:pt-[100px] md:pl-[60px] h-[90vh]`}
             >
                 <div
                     className={`flex flex-row justify-center items-center my-5`}
@@ -34,7 +34,7 @@ export default function HomePage({setCurrentNav}) {
                         className='mx-5'
                     >
                         <img
-                            className='border rounded-full object-cover h-[10rem] w-[10rem]'
+                            className='border rounded-full object-cover h-[10rem] w-[10rem] md:h-[20rem] md:w-[20rem]'
                             src="https://i.imgur.com/MaI3re8.jpg"
                             alt="Billy Lu"
                         />
@@ -45,7 +45,7 @@ export default function HomePage({setCurrentNav}) {
                         className='flex flex-col justify-center mb-auto'
                     >
                         <p
-                            className="text-blue-700 text-[1rem]"
+                            className="text-blue-700 text-[1rem] md:text-[4rem]"
                         >
                             {nameString}
                         </p>

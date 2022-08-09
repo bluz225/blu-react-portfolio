@@ -28,7 +28,7 @@ export default function Navbar({currentNav}) {
     return (
         <>
         <div
-            className={`bg-gray-400 flex justify-center items-center py-5 px-[10px] h-[5vh] md:justify-end`}
+            className={`bg-gray-400 flex justify-center items-center py-5 px-[10px] h-[5vh] md:text-[2rem] md:justify-end`}
         >
             <Link
                 className={`${linkStyles} ${homeLinkColor}`}

@@ -14,14 +14,13 @@ export default function Projects({ setCurrentNav }) {
       <>
         <div
           key={`${projectId}${idx}`}
-          className='w-[350px] relative group my-5 md:m-5 group-hover:bg-red-900'
+          className='w-[350px] relative group my-5 md:w-[600px] md:m-5 group-hover:bg-red-900'
         >
 
           <div
             className='absolute object-fill z-[20] bg-white'
           >
           </div>
-          {/* project 1: Gun Shapes Project */}
 
           <img
             className={`object-cover place-self-center`}
@@ -44,14 +43,20 @@ export default function Projects({ setCurrentNav }) {
               >
                 <a
                   className={`text-slate-100 hover:text-slate-100`}
-                  href={project.gitHubUrl}>GitHub</a>
+                  href={project.gitHubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a>
               </p>
               <p
                 className={``}
               >
                 <a
                   className={`text-slate-100 hover:text-slate-100`}
-                  href={project.deployedUrl}>Delpoyed</a>
+                  href={project.deployedUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Delpoyed</a>
               </p>
             </div>
           </div>

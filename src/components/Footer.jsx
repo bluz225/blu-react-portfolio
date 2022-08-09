@@ -1,5 +1,5 @@
 import React from 'react'
-import myResumePDF from "../files/BillyLu-Resume-SoftwareEngineer2.pdf"
+import myResumePDF from "../files/BillyLu-Resume-SoftwareEngineer3.pdf"
 import { AiFillFilePdf } from "react-icons/ai"
 
 export default function Footer() {
@@ -17,7 +17,10 @@ export default function Footer() {
             >
                 <a
                     className={`${linkStyles}`}
-                    href='https://github.com/bluz225'>
+                    href='https://github.com/bluz225'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
                     <img
                         className={`${imgStylesSM} ${imgStylesMD}`}
                         src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
@@ -29,7 +32,10 @@ export default function Footer() {
                 </a>
                 <a
                     className={`${linkStyles}`}
-                    href='https://www.linkedin.com/in/billy-lu-bbb61652/'>
+                    href='https://www.linkedin.com/in/billy-lu-bbb61652/'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
                     <img
                         className={`${imgStylesSM} ${imgStylesMD}`}
                         src='https://cdn-icons-png.flaticon.com/512/174/174857.png'
@@ -45,7 +51,8 @@ export default function Footer() {
                         ${linkStyles} 
                     `}
                     href={myResumePDF}
-                    download="Billy_Lu_Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
 
                     <AiFillFilePdf
